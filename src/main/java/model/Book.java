@@ -17,9 +17,6 @@ public class Book {
         return IdBook;
     }
 
-    public static int getIdNext() {
-        return IdNext;
-    }
 
     public String getName() {
         return name;
