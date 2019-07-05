@@ -33,4 +33,8 @@ public class BookServicesTest {
         int expected = 2;
         Assert.assertEquals(expected, bookList.size());
     }
+
+    @Test
+    public void deleteBook() {
+    }
 }
