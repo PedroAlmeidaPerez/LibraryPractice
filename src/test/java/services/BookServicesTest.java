@@ -36,5 +36,11 @@ public class BookServicesTest {
 
     @Test
     public void deleteBook() {
+        setBooks();
+        int index=1;
+        boolean result = bookServices.deleteBook(index);
+        boolean expected = true;
+        System.out.println(bookServices.getBooks().entrySet());
+        Assert.assertEquals(expected, result);
     }
 }
