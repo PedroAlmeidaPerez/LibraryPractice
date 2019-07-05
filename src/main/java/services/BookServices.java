@@ -19,9 +19,9 @@ public class BookServices {
         this.books = books;
     }
 
-    public boolean deleteBook  (/*HashMap<Integer, Book> books, */int index) {
+    public boolean deleteBook  (int index) {
         boolean deleted = false;
-        if (index == books.get(index).getIdBook()){
+        if (index == this.books.get(index).getIdBook()){
             this.books.remove(index);
             deleted = true;
         }

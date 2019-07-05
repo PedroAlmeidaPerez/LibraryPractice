@@ -15,9 +15,9 @@ public class BookServicesTest {
     @Test
     public void getBooks() {
         HashMap<Integer, Book> result;
-        setBooks();
+        //setBooks();
         result = bookServices.getBooks();
-        int expected = 2;
+        int expected = 1;
         System.out.println(bookServices.getBooks().entrySet());
         Assert.assertEquals(expected, result.size());
     }
@@ -40,6 +40,7 @@ public class BookServicesTest {
         int index=1;
         boolean result = bookServices.deleteBook(index);
         boolean expected = true;
+        getBooks();
         System.out.println(bookServices.getBooks().entrySet());
         Assert.assertEquals(expected, result);
     }
