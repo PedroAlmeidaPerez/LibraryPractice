@@ -5,9 +5,13 @@ import model.Book;
 import java.util.HashMap;
 
 public class BookServices {
-    private HashMap<String, Book> books;
+     HashMap<String, Book> books;
 
     public BookServices() {
-        books = new HashMap<String, Book>();
+        this.books = new HashMap<String, Book>();
+    }
+
+    public HashMap<String, Book> getBooks() {
+        return books;
     }
 }
