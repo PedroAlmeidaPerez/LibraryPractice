@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BookTest {
-    Book book = new Book("pedro", "juan");
-    Book book2 = new Book("pedro", "juan");
+    Book book = new Book("pedro", "juan", 1999);
+    Book book2 = new Book("pedro", "juan", 2000);
 
     @Test
     public void testGetbook(){
