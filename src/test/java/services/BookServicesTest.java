@@ -44,5 +44,8 @@ public class BookServicesTest {
 
     @Test
     public void searchBook() {
+        boolean expected=true;
+        boolean result = bookServices.searchBook(1, "pedro");
+        Assert.assertEquals(expected, result);
     }
 }
