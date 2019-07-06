@@ -27,5 +27,9 @@ public class BookServices {
         }
         return  deleted;
     }
+    public boolean searchBook (int index, String bookName){
+
+        return false;
+    }
 
 }

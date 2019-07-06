@@ -3,10 +3,7 @@ package services;
 import model.Book;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.HashMap;
-
-import static org.junit.Assert.*;
 
 public class BookServicesTest {
     BookServices bookServices = new BookServices();
@@ -43,5 +40,9 @@ public class BookServicesTest {
         getBooks();
         System.out.println(bookServices.getBooks().entrySet());
         Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void searchBook() {
     }
 }
